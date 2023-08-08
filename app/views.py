@@ -3,5 +3,8 @@ from django.http import HttpResponse
 # Create your views here.
 
 
+# def index(request):
+#     return HttpResponse('Hello Mustafa')   This is one simple way to write text in the Dom
+
 def index(request):
-    return HttpResponse('Hello Mustafa')
+    return render(request, 'index/index.html')
