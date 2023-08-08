@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>This is the Task Page.</h1>
-    <ul>
-      {% for task in tasks %}
-      <li>{{ task }}</li>
-      {% endfor %}
-    </ul>
-  </body>
-</html>
+{% extends 'task/layout.html' %} {% block body%}
+<h1>This is the Task Page.</h1>
+<ul>
+  {% for task in tasks %}
+  <li>{{ task }}</li>
+  {% endfor %}
+</ul>
+<h2>The result is {{total}} baby</h2>
+{% endblock %}
